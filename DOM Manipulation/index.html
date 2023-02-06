@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM Traversing
+        
+        <div class="wrapper">
+        <h1 id=#mainheading>Rainbow</h1>
+        <div class="div1 a1">One</div>
+        <div class="div1 a2">Two</div>
+        <div class="div1 a3">Three</div>
+        <div class="div1 a4"> Four</div>
+        <div class="div1 a5">Five</div>
+      </div> -->
+
+      <!-- addEventlistener practice
+
+      <div class="container">
+        <div class="box One">
+            <h1>Box one</h1>
+            <button onclick="alert('Hello, JavaScript')">Enter</button>
+        </div>
+        <div class="box Two">
+            <h1>Box two</h1>
+            <button class="buttonTwo">Enter</button>
+        </div>
+        <div class="box Three">
+            <h1>Box three</h1>"
+            <button class ="buttonThree">Enter</button>
+        </div>
+    
+      </div> -->
+
+    
+</body>
+<script>
+/* /////////////////////////////////////////////////////////
+
+    const title = document.getElementById('#mainheading')
+    //console.log(title)
+    
+    const getColours = document.getElementsByClassName('div1')
+    //console.log(getColours)
+
+    const getTags = document.getElementsByTagName('div')
+    //console.log(getTags)
+
+    const query = document.querySelector('div')
+    //console.log(query)
+
+    const all = document.querySelectorAll('div')
+    //console.log(all)
+
+    title.style.color = 'pink' 
+
+    const container = document.querySelector('.wrapper')
+    const newDiv = document.createElement('div')
+
+    container.append(newDiv)
+
+    console.log(container)
+
+    newDiv.innerText = 'six'
+
+    //newDiv.setAttribute('class', 'div1 a2')
+
+    newDiv.classList.add('div1')
+
+    newDiv.classList.remove('div1')
+
+    newDiv.remove()
+
+    // Traversing the DOM
+
+    // parent.Node traversal
+
+    console.log(query.parentNode)
+
+    console.log(query.parentNode.parentNode)
+
+    // childNodes traversal
+
+    console.log(query.childNodes)
+    console.log(query.firstChild)
+    console.log(query.lastChild)
+    
+    query.childNodes[1].style.color = 'blue'
+
+    // siblingNode traversal
+
+    console.log(query.previousElementSibling) 
+    console.log(query.nextElementSibling)
+
+*/ /////////////////////////////////////////////////////////
+
+/* /////////////////////////////////////////////////////////
+
+addEventListener practice
+
+const buttontwo = document.querySelector('.buttonTwo').addEventListener('click', buttonTwo)
+
+function buttonTwo (){
+    alert(`I'm also listening to you`)
+}
+
+const buttonthree = document.querySelector('.buttonThree')
+
+function changeColour () {
+    buttonthree.style.backgroundColor = 'pink'
+}
+
+buttonthree.addEventListener('mouseover', changeColour)
+
+*/ /////////////////////////////////////////////////////////
+
+
+    
+    </script>
+</html>
